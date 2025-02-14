@@ -1,6 +1,6 @@
-# from flask_login import LoginManager
-# from flask_bcrypt import Bcrypt
-# from flask_jwt_extended import JWTManager
+from flask_login import LoginManager
+from flask_bcrypt import Bcrypt
+from flask_jwt_extended import JWTManager
 import logging
 
 
@@ -15,6 +15,6 @@ def setup_logging(app):
     )
     app.logger.info(f"Logging is set at {log_level} level.")
     
-# login_manager = LoginManager()
-# bcrypt = Bcrypt()
-# jwt = JWTManager()
+login_manager = LoginManager()
+bcrypt = Bcrypt()
+jwt = JWTManager()
